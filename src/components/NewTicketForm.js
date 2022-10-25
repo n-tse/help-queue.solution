@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function NewTicketForm(props){
 
@@ -8,7 +9,7 @@ function NewTicketForm(props){
     console.log(event.target.location.value);
     console.log(event.target.issue.value);
   }
-  
+
   return (
     <React.Fragment>
       <form onSubmit={handleNewTicketFormSubmission}>
@@ -28,5 +29,9 @@ function NewTicketForm(props){
     </React.Fragment>
   );
 }
+
+NewTicketForm.propTypes= {
+  onNewTicketCreation: PropTypes.func
+};
 
 export default NewTicketForm;
