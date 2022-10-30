@@ -24,7 +24,7 @@ function NewTicketForm(props){
         <input
           type='text'
           name='location'
-          placeholder='Location' />
+          placeholder='Location' /> 
         <textarea
           name='issue'
           placeholder='Describe your issue.' />
